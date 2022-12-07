@@ -6,48 +6,6 @@
         display:none;
     }
 
-    & > header {
-        @media(min-width:768px){
-            height:10vh;
-            font-size:1.2rem;
-            text-transform:uppercase;
-            font-weight:300;
-            grid-template-columns: 0.1fr 1fr 0.1fr;
-        }
-        display:grid;
-        background-color:#010630;
-        color:white;
-
-        & > figure {
-            height:10vh;
-
-            & > img {
-                @media(min-width:768px) {
-                height:95%;
-                padding-left:2vw;
-                }
-            }
-        }
-
-
-        & > nav {
-            justify-self:center;
-            align-self:center;
-
-                & > ul {
-                    list-style-type:none;
-
-                    & > li {
-                      @media(min-width:767.98px) {
-                        display:inline-block;
-                        padding:0 4vw;
-                      }
-                    }
-
-                }
-        }
-    }
-
     & > main {
         display:grid;
         @media(min-width:767.98px) {
