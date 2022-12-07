@@ -270,7 +270,6 @@ table {
 @media (min-width: 767.98px) {
   #listeCours > main {
     grid-template-columns: 0.1fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 1fr;
   }
 }
 #listeCours > main > section {
@@ -310,7 +309,7 @@ table {
   background-color: white;
 }
 #listeCours > main > section > ul > li > article {
-  padding: 1vh 1vw;
+  padding: 1vh 1vw 0 1vw;
 }
 @media (min-width: 767.98px) {
   #listeCours > main > section > ul > li > article {
@@ -328,7 +327,6 @@ table {
   font-weight: bold;
   color: #0166FF;
   text-align: center;
-  padding-top: 2vh;
 }
 #listeCours > main > section > ul > li > article > header > ul {
   display: grid;
@@ -337,15 +335,18 @@ table {
   justify-self: center;
 }
 #listeCours > main > section > ul > li > article > header > ul > li {
+  font-family: "Montserrat", sans-serif;
   justify-self: center;
   align-self: center;
   background-color: #F0F0F0;
   border-radius: 15px;
   color: #00398F;
   padding: 1vh 2.5vw;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 #listeCours > main > section > ul > li > article > section {
-  padding: 2vh 1vw;
+  padding: 2vh 0;
 }
 #listeCours > main > section > ul > li > article > section > h3 {
   font-size: 1.3rem;
@@ -357,9 +358,9 @@ table {
   font-family: "Monserrat", sans-serif;
   font-size: 1.1rem;
   font-weight: 300;
+  padding: 3vh 0;
 }
 #listeCours > main > section > ul > li > article > footer {
-  padding: 0 1vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -367,13 +368,13 @@ table {
 #listeCours > main > section > ul > li > article > footer > span {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
 }
 #listeCours > main > section > ul > li > article > footer > ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 1vh;
+  padding-top: 2vh;
 }
 #listeCours > main > section > ul > li > article > footer > ul > li:first-of-type {
   justify-self: center;
@@ -391,6 +392,51 @@ table {
   color: white;
   padding: 1.5vh 2.5vw;
   border: none;
+}
+#listeCours > main > section > aside {
+  height: 96%;
+  border: 1px solid blue;
+  border-radius: 5px;
+  background-color: white;
+  padding: 3vh 1vw 0 1vw;
+}
+#listeCours > main > section > aside > header > h3 {
+  font-size: 1.8rem;
+  color: #00398F;
+  padding-bottom: 3vh;
+}
+#listeCours > main > section > aside > nav > h4 {
+  font-size: 1.3rem;
+  padding-bottom: 3vh;
+}
+#listeCours > main > section > aside > nav > ul {
+  margin-bottom: 2vh;
+  padding-bottom: 3vh;
+  border-bottom: 1px solid #DDDDDD;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+#listeCours > main > section > aside > nav > ul > li {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr;
+  padding: 0.8rem 0;
+}
+#listeCours > main > section > aside > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+#listeCours > main > section > aside > nav > ul > li:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#listeCours > footer {
+  background-color: #010630;
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  height: 5vh;
+  padding: 2vh 0 1vh 0;
+  margin-top: 10vh;
 }
 
 /*# sourceMappingURL=style.css.map */
