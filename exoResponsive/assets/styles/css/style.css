@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#home {
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  #home {
+    background: linear-gradient(rgba(14, 66, 143, 0.7), rgba(37, 115, 234, 0.7), rgba(14, 66, 143, 0.7)), url("https://res03.sites.3wa.io/assets/files/inte/j9/assets/img/code.jpeg");
+  }
+}
+@media (max-width: 767.98px) {
+  #home {
+    background: linear-gradient(rgba(14, 66, 143, 0.7), rgba(37, 115, 234, 0.7), rgba(14, 66, 143, 0.7)), url("https://res03.sites.3wa.io/assets/files/inte/j9/assets/img/code-portrait.jpg");
+  }
+}
+#home > header {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: grid;
+}
+@media (min-width: 768px) {
+  #home > header {
+    height: 10vh;
+    grid-template-columns: 0.1fr 1fr;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header {
+    grid-template-rows: 4vh 4vh;
+  }
+}
+#home > header > h1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #home > header figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header figure {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #home > header figure > img {
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header figure > img {
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  #home > header > nav {
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header > nav {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+  }
+}
+#home > header > nav > h2 {
+  display: none;
+}
+#home > header > nav > ul {
+  list-style-type: none;
+}
+@media (min-width: 768px) {
+  #home > header > nav > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header > nav > ul {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  #home > header > nav > ul > li {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > header > nav > ul > li {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media (min-width: 768px) {
+  #home > main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > main {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+#home > main > section {
+  display: block;
+}
+@media (min-width: 768px) {
+  #home > main > section > h1 {
+    font-size: 8rem;
+    color: white;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > main > section > h1 {
+    font-size: 6rem;
+    color: white;
+  }
+}
+#home > main > section > h2 {
+  font-family: "Roboto-Condensed", sans-serif;
+  grid-column: 2/3;
+  color: #8ae7c3;
+}
+@media (min-width: 768px) {
+  #home > main > section > h2 {
+    font-size: 6.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #home > main > section > h2 {
+    font-size: 4.5rem;
+  }
+}
+#home > footer {
+  background-color: #010630;
+  color: white;
+  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+}
+#home > footer > h2 {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
