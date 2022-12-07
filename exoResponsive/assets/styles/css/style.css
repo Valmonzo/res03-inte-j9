@@ -221,4 +221,47 @@ table {
   text-align: center;
 }
 
+#listeCours {
+  font-family: "Monserrat", sans-serif;
+}
+#listeCours .hidden {
+  display: none;
+}
+#listeCours > header {
+  display: grid;
+  background-color: #010630;
+  color: white;
+}
+@media (min-width: 768px) {
+  #listeCours > header {
+    height: 10vh;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+  }
+}
+#listeCours > header > figure {
+  height: 10vh;
+}
+@media (min-width: 768px) {
+  #listeCours > header > figure > img {
+    height: 95%;
+    padding-left: 2vw;
+  }
+}
+#listeCours > header > nav {
+  justify-self: center;
+  align-self: center;
+}
+#listeCours > header > nav > ul {
+  list-style-type: none;
+}
+@media (min-width: 767.98px) {
+  #listeCours > header > nav > ul > li {
+    display: inline-block;
+    padding: 0 4vw;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
